@@ -25,6 +25,7 @@ $(document).ready(function() {
   var question2 = $("input:radio[name=question2]:checked").val();
   var question3 = $("input:radio[name=question3]:checked").val();
   var question4 = $("input:radio[name=question4]:checked").val();
+  var question5 = $("input:radio[name=question5]:checked").val();
   //  var age = parseInt(ageString);
     //var job = $("#job").val();
 
@@ -33,6 +34,7 @@ $(document).ready(function() {
     $(".info2").text(question2);
     $(".info3").text(question3);
     $(".info4").text(question4);
+    $(".info5").text(question5);
   //  $(".info2").text("Job: " + job);
 
 
