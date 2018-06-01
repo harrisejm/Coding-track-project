@@ -38,29 +38,31 @@ $(document).ready(function() {
     $(".info5").text(question5);
     $(".info6").text(name);
 
-    if (question1 === "no" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
-      $(".results").text("Although you indicated you do not like Microsoft C# is likey the best fit");
+    if (question1 === "no" && question2 === "software" && question3 === "no" && question4 === "larger" && question5 == "full-stack") {
+            $(".results").text("C# is definitely, definitely, definitely for you!!!");
+    } else if (question1 === "no" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
+      $(".results").text("although you indicated you do not like Microsoft C# is likey the best fit.");
     } else if (question1 === "no" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
       $(".results").text("C# for sure");
     } else if (question1 === "yes" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
-      $(".results").text("Although you indicated you do not like Microsoft C# is likey the best fit");
+      $(".results").text("although you indicated you do not like Microsoft C# is likey the best fit.");
     } else if (question1 === "yes" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
-      $(".results").text("C# is definitely for you"); ////C# DONE
-
+      $(".results").text("C# is definitely for you.");
+     ////C# DONE
       //CSS/React
     } else if (question1 === "yes" && question2 === "interative" && question5 !== "back-end") {
-      $(".results").text("CSS/React is for you");
+      $(".results").text("CSS/React is for you.");
     }  else if (question1 === "no" && question2 === "interative" && question5 !== "back-end" && question5 !== "full-stack") {
-      $(".results").text("CSS/React for you");
+      $(".results").text("CSS/React for you.");
       //CSS/REACT Done
 
     } else if (question1 === "yes" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
-      $(".results").text("Ruby is for you");
+      $(".results").text("Ruby is for you.");
     } else if (question1 === "no" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
-      $(".results").text("Ruby is for you");
+      $(".results").text("Ruby is for you.");
     } else if (question1 === "no" && question2 === "interative" || question5 === "back-end" || question5 === "full-stack") {
-      $(".results").text("Ruby is for you");
-    } else if (question5 === "front-end") {
+      $(".results").text("Ruby is for you.");
+    } else if (question5 === "front-end.") {
       $(".results").text("CSS/React is for you");
     } else {
       $(".results").text("C# is the best fit");
