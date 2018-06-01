@@ -30,6 +30,9 @@ div.panel-body p.p3 {
 div.panel-body p.p4 {
   display: none;
 }
+div.panel-body p.p5 {
+  display: none;
+}
 
 h2.panel-title {
   float: left;
