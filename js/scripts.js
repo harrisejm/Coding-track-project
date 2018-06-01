@@ -36,15 +36,37 @@ $(document).ready(function() {
     $(".info4").text(question4);
     $(".info5").text(question5);
 
-if (question1 === "no" && question2 === "software" && question3 === "yes") {
+if (question1 === "no" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
    $(".results").text("Although you indicated you do not like MicroSoft C#");
-} else if (question1 === "no" && question2 === "software" && question3 === "no") {
+} else if (question1 === "no" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
    $(".results").text("C# for sure");
-} else if (question1 === "yes" && question2 === "software" && question3 === "yes") {
+} else if (question1 === "yes" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
   $(".results").text("Although you indicated you do not like MicroSoft C#");
-} else if (question1 === "yes" && question2 === "software" && question3 === "no") {
-   $(".results").text("C# for sure");
+} else if (question1 === "yes" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
+   $(".results").text("C# for sure"); ////C# DONE
+
+   //CSS/React
+} else if (question1 === "yes" && question2 === "interative" && question5 !== "back-end") {
+  $(".results").text("CSS/React1");
+}  else if (question1 === "no" && question2 === "interative" && question5 !== "back-end" && question5 !== "full-stack") {
+    $(".results").text("CSS/React");
+   //CSS/REACT Done
+
+} else if (question1 === "yes" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
+  $(".results").text("Ruby");
+} else if (question1 === "no" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
+  $(".results").text("Ruby");
+} else if (question1 === "no" && question2 === "interative" || question5 === "back-end" || question5 === "full-stack") {
+  $(".results").text("Ruby");
+} else if (question5 === "front-end") {
+   $(".results").text("CSS/React");
+} else {
+   $(".results").text("C#");
 }
+
+
+
+
 
     //$("#story").show();
 
