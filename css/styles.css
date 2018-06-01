@@ -10,3 +10,34 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+div.panel-body p.p1 {
+  display: none;
+}
+div.panel-body p.p2 {
+  display: none;
+}
+div.panel-body p.p3 {
+  display: none;
+}
+div.panel-body p.p4 {
+  display: none;
+}
+
+h2.panel-title {
+  float: left;
+}
+
+div.moveButton {
+  margin-right: 40px;
+
+}
+.buttonPress {
+  background-color: #1E90FF;
+  box-shadow: 5px 5px 5px black;
+  color: white;
+}
+div.moveButton button:active {
+  box-shadow: 2px 2px 2px #003300;
+  transform: translate(3px, 3px);
+}
