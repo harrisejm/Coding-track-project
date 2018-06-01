@@ -19,6 +19,11 @@ $(document).ready(function() {
       $("div.panel-body p.p5").slideToggle();
   });
 
+  $(".toggle").click(function(){
+      $("div.box1 p.moveT").slideToggle();
+  });
+
+
   $("#formOne").submit(function(event) {
   var name = $("#name").val();
   var question1 = $("input:radio[name=question1]:checked").val(); debugger;
@@ -35,36 +40,39 @@ $(document).ready(function() {
     $(".info3").text(question3);
     $(".info4").text(question4);
     $(".info5").text(question5);
+    $(".info6").text(name);
 
 if (question1 === "no" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
-   $(".results").text("Although you indicated you do not like MicroSoft C#");
+   $(".results").text("Although you indicated you do not like Microsoft C# is likey the best fit");
 } else if (question1 === "no" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
    $(".results").text("C# for sure");
 } else if (question1 === "yes" && question2 === "software" && question3 === "yes" && question5 !== "front-end") {
-  $(".results").text("Although you indicated you do not like MicroSoft C#");
+  $(".results").text("Although you indicated you do not like Microsoft C# is likey the best fit");
 } else if (question1 === "yes" && question2 === "software" && question3 === "no" && question5 !== "front-end") {
-   $(".results").text("C# for sure"); ////C# DONE
+   $(".results").text("C# is definitely for you"); ////C# DONE
 
    //CSS/React
 } else if (question1 === "yes" && question2 === "interative" && question5 !== "back-end") {
-  $(".results").text("CSS/React1");
+  $(".results").text("CSS/React is for you");
 }  else if (question1 === "no" && question2 === "interative" && question5 !== "back-end" && question5 !== "full-stack") {
-    $(".results").text("CSS/React");
+    $(".results").text("CSS/React for you");
    //CSS/REACT Done
 
 } else if (question1 === "yes" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
-  $(".results").text("Ruby");
+  $(".results").text("Ruby is for you");
 } else if (question1 === "no" && question2 === "content" || question5 === "back-end" || question5 === "full-stack") {
-  $(".results").text("Ruby");
+  $(".results").text("Ruby is for you");
 } else if (question1 === "no" && question2 === "interative" || question5 === "back-end" || question5 === "full-stack") {
-  $(".results").text("Ruby");
+  $(".results").text("Ruby is for you");
 } else if (question5 === "front-end") {
-   $(".results").text("CSS/React");
+   $(".results").text("CSS/React is for you");
 } else {
-   $(".results").text("C#");
+   $(".results").text("C# is the best fit");
 }
 
-
+$(".toggleR").click(function(){
+  $("div p.moveT").slideToggle();
+});
 
 
 
