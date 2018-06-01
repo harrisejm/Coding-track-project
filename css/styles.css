@@ -28,14 +28,18 @@ h2.panel-title {
   float: left;
 }
 
-div.moveButton {
-  margin-right: 40px;
+div.h1.panel-title {
+  height: 30px;
+}
 
+div.moveButton {
+  margin-left: 60px;
 }
 .buttonPress {
   background-color: #1E90FF;
   box-shadow: 5px 5px 5px black;
   color: white;
+  border-radius: 5px;
 }
 div.moveButton button:active {
   box-shadow: 2px 2px 2px #003300;
